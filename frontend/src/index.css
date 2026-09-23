@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0f766e;
+  --color-brand-green: #10b981;
+  --color-brand-blue: #3b82f6;
+  --color-brand-orange: #f97316;
+  --color-brand-amber: #f59e0b;
+  --color-brand-red: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Leaflet map overrides */
+.leaflet-container {
+  background: #f1f5f9 !important;
+}
